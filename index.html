@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melinda Wijaya's Portfolio</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="container pt-5">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg bg-black fixed-top w-100 px-3">
+        <div class="container-fluid px-4">
+          <a class="navbar-brand" href="#">Portfolio</a>
+
+          <!-- Toggler untuk mobile -->
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Offcanvas untuk mobile -->
+          <div class="offcanvas offcanvas-end bg-black" tabindex="-1" id="navbarOffcanvas" aria-labelledby="navbarOffcanvasLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title text-white ms-3" id="navbarOffcanvasLabel">Menu</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+                <li class="nav-item">
+                  <a class="nav-link " href="#header">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Konten Utama -->
+    <div class="container-fluid">
+      <div class="row align-items-center pt-lg-5 pt-sm-0 pe-0">
+        <!-- Kolom Teks -->
+        <div class="col-lg-7 offset-lg-1">
+          <h2>Hello everyone 👋</h2>
+          <h1 class="my-4">I'm Melinda Wijaya</h1>
+          <h2 class="jobs">Full Stack Web Developer</h2>
+    
+          <br>
+          <!-- Logo Media Sosial -->
+          <div class="my-4 d-flex justify-content-center justify-content-lg-start">
+            <a href="https://www.linkedin.com/in/melinda-wijaya-680914304/" target="_blank" class="me-3">
+              <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="width: 32px; height: 32px;">
+            </a>
+            <a href="https://github.com/melindawijaya" target="_blank" class="me-3">
+              <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" style="width: 32px; height: 32px;">
+            </a>
+            <a href="https://www.instagram.com/melindawijaya_mw/" target="_blank">
+              <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" style="width: 32px; height: 32px;">
+            </a>
+          </div>
+    
+          <!-- Tombol Download CV -->
+          <div class="nav-pills mt-5 d-grid d-md-block">
+            <a href="public/assets/cv_melindawijaya.pdf" class="download-button" target="_blank">Download CV</a>
+          </div>
+        </div>
+    
+        <!-- Kolom Gambar Profil -->
+        <div class="col-lg-4 position-relative">
+          <!-- Latar Belakang Orange -->
+          <div class="orange-background"></div>
+          <!-- Foto Profil -->
+          <img src="public/assets/img/profile.png" class="img-fluid profile-img position-relative" alt="Profile Image" data-aos="fade-up" data-aos-delay="100">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-5 mt-5">
+    <div class="container">
+      <!-- Header -->
+      <div class="row mb-5">
+        <div class="col-12 text-center">
+          <h2 class="section-title">Technical Skills</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">Technologies I've been working with recently</p>
+        </div>
+      </div>
+
+      <!-- Skills Grid -->
+      <div class="row">
+        <!-- Frontend Development -->
+        <div class="col-lg-6 mb-4">
+          <div class="skill-box">
+            <div class="skill-header">
+              <i class="fas fa-code skill-icon"></i>
+              <h3>Frontend Development</h3>
+            </div>
+            <div class="skill-body">
+              <div class="skill-badge">
+                <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/>
+              </div>
+              <div class="skill-badge">
+                <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
+              </div>
+              <div class="skill-badge">
+                <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
+              </div>
+              <div class="skill-badge">
+                <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
+              </div>
+              <div class="skill-badge">
+                <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap"/>
+              </div>
+              <div class="skill-badge">
+                <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend Development -->
+        <div class="col-lg-6 mb-4">
+          <div class="skill-box">
+            <div class="skill-header">
+              <i class="fas fa-server skill-icon"></i>
+              <h3>Backend Development</h3>
+            </div>
+            <div class="skill-body">
+              <div class="skill-badge">
+                <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js"/>
+              </div>
+              <div class="skill-badge">
+                <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express.js"/>
+              </div>
+              <div class="skill-badge">
+                <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel"/>
+              </div>
+              <div class="skill-badge">
+                <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="col-lg-6 mb-4">
+          <div class="skill-box">
+            <div class="skill-header">
+              <i class="fas fa-database skill-icon"></i>
+              <h3>Database</h3>
+            </div>
+            <div class="skill-body">
+              <div class="skill-badge">
+                <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"/>
+              </div>
+              <div class="skill-badge">
+                <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
+              </div>
+              <div class="skill-badge">
+                <img src="https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white" alt="Oracle"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="col-lg-6 mb-4">
+          <div class="skill-box">
+            <div class="skill-header">
+              <i class="fas fa-tools skill-icon"></i>
+              <h3>Development Tools</h3>
+            </div>
+            <div class="skill-body">
+              <div class="skill-badge">
+                <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
+              </div>
+              <div class="skill-badge">
+                <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman"/>
+              </div>
+              <div class="skill-badge">
+                <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" alt="Figma"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="section-title">Portfolio</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle mb-4">Here are some of the projects I've worked on</p>
+        </div>
+        
+      </div>
+
+      <!-- Project 1: Quickfly -->
+      <div class="row mb-5 align-items-center">
+        <div class="col-12">
+          <div class="card shadow">
+            <div class="card-body py-lg-5 px-lg-5">
+              <h3>Quickfly</h3>
+              <p class="card-text mb-4">
+                A web-based air ticket booking application that features digital ticketing and real-time integration.
+              </p>
+              <div class="col-12 mb-4">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://www.web-quickfly.my.id/" allowfullscreen></iframe>
+              </div>
+              <div class="d-grid gap-2 d-md-flex">
+                <a href="https://www.figma.com/proto/kNprQ8KdgMwqEANjZE2GUw/Tugas-IMK?node-id=422-82&t=uYtFykPiC2a0q9QS-1&scaling=scale-down&content-scaling=fixed&page-id=312%3A171&starting-point-node-id=422%3A82" target="_blank" class="btn btn-primary btn-visit2">User Prototype</a>
+                <a href="https://www.figma.com/proto/kNprQ8KdgMwqEANjZE2GUw/Tugas-IMK?node-id=712-63&t=OiGaQIJjIQcF7Gjs-1&scaling=scale-down&content-scaling=fixed&page-id=312%3A171&starting-point-node-id=712%3A63" target="_blank" class="btn btn-secondary btn-visit2">Seller Prototype</a>
+                <a href="https://www.figma.com/proto/kNprQ8KdgMwqEANjZE2GUw/Tugas-IMK?node-id=720-318&t=OiGaQIJjIQcF7Gjs-1&scaling=scale-down&content-scaling=fixed&page-id=312%3A171&starting-point-node-id=720%3A318" target="_blank" class="btn btn-info btn-visit2">Customer Service Prototype</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Stay Healthy -->
+      <div class="row mb-5 align-items-center">
+        <div class="col-12">
+          <div class="card shadow">
+            <div class="card-body py-lg-5 px-lg-5">
+              <h3>Stay Healthy</h3>
+              <p class="card-text mb-4">
+                An application that helps the user's healthy lifestyle by suggesting exercise, monitoring sleep activity, and suggesting food menus according to the user's goals.
+              </p>
+              <div class="col-12 mb-4">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://embed.figma.com/proto/kNprQ8KdgMwqEANjZE2GUw/Tugas-IMK?node-id=422-82&scaling=scale-down&content-scaling=fixed&page-id=312%3A171&starting-point-node-id=422%3A82&embed-host=share" allowfullscreen></iframe>
+              </div>
+              <div class="d-grid gap-2 d-md-flex">
+                <a href="https://www.figma.com/proto/kNprQ8KdgMwqEANjZE2GUw/Tugas-IMK?node-id=422-82&t=uYtFykPiC2a0q9QS-1&scaling=scale-down&content-scaling=fixed&page-id=312%3A171&starting-point-node-id=422%3A82" target="_blank" class="btn btn-primary btn-visit2">User Prototype</a>
+                <a href="https://www.figma.com/proto/kNprQ8KdgMwqEANjZE2GUw/Tugas-IMK?node-id=712-63&t=OiGaQIJjIQcF7Gjs-1&scaling=scale-down&content-scaling=fixed&page-id=312%3A171&starting-point-node-id=712%3A63" target="_blank" class="btn btn-secondary btn-visit2">Seller Prototype</a>
+                <a href="https://www.figma.com/proto/kNprQ8KdgMwqEANjZE2GUw/Tugas-IMK?node-id=720-318&t=OiGaQIJjIQcF7Gjs-1&scaling=scale-down&content-scaling=fixed&page-id=312%3A171&starting-point-node-id=720%3A318" target="_blank" class="btn btn-info btn-visit2">Customer Service Prototype</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: EcoTrade -->
+      <div class="row mb-5 align-items-center">
+        <div class="col-12">
+          <div class="card shadow">
+            <div class="card-body py-lg-5 px-lg-5">
+              <h3>EcoTrade</h3>
+              <p class="card-text mb-4">
+                A web-based application that connects farmers and manure vendors to solve the problem of disease due to unmanaged manure.
+              </p>
+              <div class="col-12 mb-4">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://embed.figma.com/proto/SSC12cqKcoJNGohMHDr6VY/High-Fidelity-Website-EcoTrade?node-id=31-1853&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=31%3A1853&embed-host=share" allowfullscreen></iframe>
+              </div>
+              <div class="d-grid gap-2 d-md-flex">
+                <a href="https://www.figma.com/proto/SSC12cqKcoJNGohMHDr6VY/High-Fidelity-Website-EcoTrade?node-id=31-1853&t=R8pRWnyAC0xKAZFm-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=31%3A1853" target="_blank" class="btn btn-primary btn-visit">View Prototype</a>
+                <a href="https://www.youtube.com/watch?v=80R9NMGgRYU" target="_blank" class="btn btn-secondary btn-visit">Watch Video</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-black">
+    <div class="container">
+        <!-- Header -->
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="section-line"></div>
+            <p class="section-subtitle">Feel free to contact me via email or through my social media</p>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="mailto:melindamartci@gmail.com" class="btn btn-primary btn-lg contact-btn" target="_blank">
+              <i class="fas fa-envelope me-2"></i>Send me an email
+          </a>
+          <!-- Logo Media Sosial -->
+          <div class="my-4">
+            <a href="https://www.linkedin.com/in/melinda-wijaya-680914304/" target="_blank" class="me-3">
+              <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="width: 32px; height: 32px;">
+            </a>
+            <a href="https://github.com/melindawijaya" target="_blank" class="me-3">
+              <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" style="width: 32px; height: 32px;">
+            </a>
+            <a href="https://www.instagram.com/melindawijaya_mw/" target="_blank">
+              <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" style="width: 32px; height: 32px;">
+            </a>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4">
+    <div class="text-center footer-text">
+      <p class="mb-0">© 2024 Melinda Wijaya</p>
+    </div>
+  </footer>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail(e) {
+      e.preventDefault();
+      
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      
+      Email.send({
+          SecureToken: "YOUR_SECURE_TOKEN", // Dapatkan dari https://smtpjs.com/
+          To: 'example@gmail.com', // Email tujuan
+          From: email,
+          Subject: `New Contact Form Message from ${name}`,
+          Body: `
+              Name: ${name}<br>
+              Email: ${email}<br>
+              Message: ${message}
+          `
+      }).then(
+          message => {
+              alert("Message sent successfully!");
+              document.getElementById('contactForm').reset();
+          }
+      ).catch(
+          error => alert("There was an error sending the message. Please try again.")
+      );
+  }
+  </script>
+</body>
+</html>
