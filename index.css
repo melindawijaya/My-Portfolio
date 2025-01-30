@@ -1,7 +1,7 @@
 /* Font Face */
 @font-face {
   font-family: 'poppins';
-  src: url('Poppins/Poppins-Medium.ttf');
+  src: url('./Poppins/Poppins-Medium.ttf');
 }
 
 /* Base Styles */
