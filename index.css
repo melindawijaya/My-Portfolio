@@ -5,6 +5,10 @@
 }
 
 /* Base Styles */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: poppins;
   font-size: 16px;
@@ -47,11 +51,6 @@ p {
 }
 
 /* Navbar Styles */
-.navbar {
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
-}
-
 .navbar-brand {
   color: white;
   font-weight: 600;
@@ -147,6 +146,46 @@ p {
   margin-right: 20%;
 }
 
+.jobs {
+  color: orange
+}
+
+.typing-effect {
+  overflow: hidden;
+  border-right: 3px solid orange;
+  white-space: nowrap;
+  margin: 0;
+  width: 0;
+  display: inline-block; /* Tambahkan ini agar width mengikuti konten */
+  animation: 
+    typing 8s steps(40, end) infinite,
+    blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  0% { 
+    width: 0;
+  }
+  30% { /* Ketik sampai selesai */
+    width: 21ch; /* Sesuaikan dengan panjang teks + 1 spasi */
+  }
+  55% { /* Jeda 2 detik */
+    width: 21ch;
+  }
+  80%, 100% { /* Hapus teks */
+    width: 0;
+  }
+}
+
+@keyframes blink-caret {
+  from, to { 
+    border-color: transparent;
+  }
+  50% { 
+    border-color: orange;
+  }
+}
+
 /* Skills Section */
 .section-title {
   font-size: 2.5rem;
@@ -177,8 +216,8 @@ p {
 }
 
 .skill-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 
 .skill-header {
@@ -218,6 +257,12 @@ p {
 
 .skill-badge img {
   height: 28px;
+  transition: all 0.3s ease;
+}
+
+.skill-badge img:hover {
+  transform: translateY(-5px) rotate(5deg);
+  filter: brightness(1.1);
 }
 
 /* Social Media Links */
@@ -226,7 +271,7 @@ p {
 }
 
 .my-4 a img:hover {
-  transform: scale(1.2);
+  transform: rotate(360deg) scale(1.2);
 }
 
 .my-4 a img[alt="GitHub"] {
@@ -242,14 +287,14 @@ p {
   padding: 15px 30px;
   font-size: 1.2rem;
   transition: all 0.3s ease;
-  background-color: #ff6b00; /* Sesuaikan dengan warna orange dari tema website */
+  background-color: #ff6b00; 
   border: none;
 }
 
 #contact .contact-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-  background-color: #ff8533; /* Warna orange yang lebih terang untuk hover */
+  background-color: #ff8533; 
 }
 
 #contact p {
@@ -457,6 +502,35 @@ p {
   height: 1.25em;
 }
 
+.btn {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255,255,255,0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.btn:active::after {
+  width: 300px;
+  height: 300px;
+}
+
 /* Fix untuk buttons */
 @media (max-width: 768px) {
   .btn {
@@ -480,3 +554,25 @@ p {
     margin-top: 2rem !important;
   }
 }
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
