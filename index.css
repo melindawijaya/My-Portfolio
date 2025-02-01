@@ -133,7 +133,7 @@ p {
   z-index: 1;
 }
 
-.orange-background {
+.profile-background {
   position: absolute;
   top: 50%;
   right: 0;
@@ -370,7 +370,7 @@ p {
     line-height: 30px;
   }
 
-  .orange-background {
+  .profile-background {
     width: 100%;
     margin-right: 0;
   }
